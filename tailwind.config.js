@@ -1,3 +1,5 @@
+const { fontFamily } = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -6,11 +8,24 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      "changa-one": ["var(--changa-one-font)", "cursive"],
+      "han-sans": ["var(--han-sans-font)", ...fontFamily.sans],
+      paytone: ["var(--paytone-font)", ...fontFamily.sans],
+      "red-hat": ["var(--red-hat-font)", ...fontFamily.sans],
+    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      container: {
+        center: true,
+        padding: "10px",
+        screens: {
+          "2xs": false,
+          xs: false,
+          sm: false,
+          md: false,
+          lg: false,
+          xl: false,
+        },
       },
       colors: {
         primary: {
