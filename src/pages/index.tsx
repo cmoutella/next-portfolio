@@ -1,4 +1,4 @@
-import { Default as Template } from "@/templates";
+import { Landing as Template } from "@/templates";
 
 //Components
 import Title from "@/pageComponents/home/Title";
