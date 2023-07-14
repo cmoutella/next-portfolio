@@ -4,7 +4,7 @@ import type { AppProps } from "next/app";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <div className="bg-white">
       <style jsx global>{`
         :root {
           --han-sans-font: ${hanSans.style.fontFamily};
@@ -14,6 +14,6 @@ export default function App({ Component, pageProps }: AppProps) {
         }
       `}</style>
       <Component {...pageProps} />
-    </>
+    </div>
   );
 }

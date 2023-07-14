@@ -7,7 +7,6 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/pageComponents/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/templates/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     fontFamily: {
@@ -20,14 +19,6 @@ module.exports = {
       container: {
         center: true,
         padding: "10px",
-        screens: {
-          "2xs": false,
-          xs: false,
-          sm: false,
-          md: false,
-          lg: false,
-          xl: false,
-        },
       },
       colors: {
         primary: {

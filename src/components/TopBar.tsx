@@ -15,7 +15,7 @@ const TopBar = () => {
 
   return (
     <section className="bg-primary-medium min-w-screen py-[20px] sm:py-[60px]">
-      <div className="container max-w-[1200px]">
+      <div className="container">
         <div className="relative">
           <Link
             href={bWindow?.location.origin ?? ""}

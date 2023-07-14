@@ -22,7 +22,7 @@ const Section = ({
 
   return (
     <section className="container">
-      <div className="block w-[900px]">
+      <div className="block w-[1100px]">
         <div
           className={`flex flex-col-reverse  ${displayOrder} items-center justify-between`}
         >

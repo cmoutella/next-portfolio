@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <section className="bg-primary-medium min-w-screen py-[12px] sm:py-[12px]">
-      <div className="container max-w-[1200px]">
+      <div className="container">
         <div className="flex items-center justify-start">
           <div className="mr-[20px]">
             <Image
