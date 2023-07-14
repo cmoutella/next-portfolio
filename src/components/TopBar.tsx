@@ -1,19 +1,24 @@
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 import selfIlustration from "@/assets/images/self_ilustration.svg";
 
+type WindowType = Window | null;
+
 const TopBar = () => {
-  if (typeof window === "undefined") {
-    return null;
-  }
+  const [bWindow, setBWindow] = useState<WindowType>(null);
+
+  useEffect(() => {
+    if (!bWindow) setBWindow(window);
+  }, [bWindow]);
 
   return (
     <section className="bg-primary-medium min-w-screen py-[20px] sm:py-[60px]">
       <div className="container max-w-[1200px]">
         <div className="relative">
           <Link
-            href={window.location.origin}
+            href={bWindow?.location.origin ?? ""}
             className="text-white text-[40px] sm:text-[48px] font-red-hat /// max-w-[200px] sm:max-w-none mt-5 pointer"
             onClick={() => {}}
           >
