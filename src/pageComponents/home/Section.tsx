@@ -36,6 +36,7 @@ const Section = ({
               linkUrl={btnUrl}
               label={btnLabel}
               btnClasses="bg-secondary-light"
+              size={"small"}
             />
           </div>
           <div className="h-[200px] sm:hidden">

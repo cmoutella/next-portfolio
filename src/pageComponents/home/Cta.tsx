@@ -1,13 +1,15 @@
+import LinkButton from "@/components/LinkButton";
+
 const Cta = () => {
   return (
-    <div className="cm-home__section-contact d-flex flex-column align-items-center">
+    <div className="flex flex-col items-center justify-center sm:p-[60px]">
       <p className="mb-3">Tem uma idéia pra tirar do papel?</p>
-      <button
-        className="btn cm-btn cm-btn-contact"
-        // onClick={handleModal.open}
-      >
-        Entre em contato
-      </button>
+      <LinkButton
+        label="Entre em contato"
+        btnClasses="bg-terciary-medium text-white"
+        linkUrl="#"
+        size="large"
+      />
     </div>
   );
 };
