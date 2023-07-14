@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import { redHat } from "@/styles/utils/fonts";
 import Navigation from "@/components/TopBar";
+import Footer from "@/components/Footer";
 
 const LandingTemplate = ({ children }: { children: ReactNode }) => {
   return (
@@ -11,6 +12,7 @@ const LandingTemplate = ({ children }: { children: ReactNode }) => {
       >
         <main>{children}</main>
       </div>
+      <Footer />
     </>
   );
 };

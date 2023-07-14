@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
           --red-hat-font: ${redHat.style.fontFamily};
         }
       `}</style>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   );
 }
