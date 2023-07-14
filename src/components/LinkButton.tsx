@@ -22,8 +22,6 @@ const LinkButton = ({
   icon,
   size,
 }: ButtonProps) => {
-  console.log("size type", typeof size);
-
   const sizeConfig = {
     small: "px-[4px]",
     regular: "px-[8px]",
