@@ -1,6 +1,6 @@
-import Link from "next/link";
 import Cta from "./Cta";
 import Image from "next/image";
+import LinkButton from "@/components/LinkButton";
 
 type SectionProps = {
   description: string;
@@ -17,33 +17,37 @@ const Section = ({
   imageUrl,
   reverse = false,
 }: SectionProps) => {
+  const displayOrder = reverse ? "md:flex-row-reverse" : "md:flex-row";
+  const spacingFromImage = reverse ? "sm:ml-[60px]" : "sm:mr-[60px]";
+
   return (
-    <div className="container mx-auto">
-      <section className="block w-[900px]">
+    <section className="container">
+      <div className="block w-[900px]">
         <div
-          className={`flex flex-col-reverse md:row ${
-            reverse ? "flex-row-reverse" : "flex-row"
-          } items-center justify-between`}
+          className={`flex flex-col-reverse  ${displayOrder} items-center justify-between`}
         >
-          <div className="align-right">
-            <p className="text-[14px] sm:text-[18px] sm:max-w-unset text-center sm:text-left max-w-[80%] m-auto mb-4">
+          <div
+            className={`flex flex-col items-center sm:items-end /// sm:max-w-[500px] ${spacingFromImage}`}
+          >
+            <p className="text-[14px] sm:text-[18px] text-center sm:text-left /// max-w-[80%] sm:max-w-none m-auto mb-4">
               {description}
             </p>
-            <Link
-              href={btnUrl}
-              className="flex items-center m-auto md:m-0 mb-5 md:mb-0 mt-2"
-            >
-              {btnLabel}
-              {/* <Icon icon="arrow" /> */}
-            </Link>
+            <LinkButton
+              linkUrl={btnUrl}
+              label={btnLabel}
+              btnClasses="bg-secondary-light"
+            />
           </div>
-          <div className="h-[200px] sm:h-[392px]">
-            <Image src={imageUrl} alt="cellphone image" />
+          <div className="h-[200px] sm:hidden">
+            <Image src={imageUrl} alt="cellphone image" height={200} />
+          </div>
+          <div className="hidden sm:block">
+            <Image src={imageUrl} alt="cellphone image" height={392} />
           </div>
         </div>
         <Cta />
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 
