@@ -7,25 +7,25 @@ import Section from "@/pageComponents/home/Section";
 // Assets
 import mockupIlustration from "@/assets/images/home/mockup_ilustration.svg";
 import notebookIlustration from "@/assets/images/home/notebook_ilustration.svg";
+import { useTranslation } from "@/providers/TranslationProvider";
 
 export default function Home() {
+  const { text } = useTranslation();
+
   return (
     <Template>
       <div className="mb-[80px]">
         <Title />
       </div>
       <Section
-        description="Trabalho com design gráfico voltado para a web, criando peças para
-              marketing digital e projetos completos de UI."
-        btnLabel="Conheça meu trabalho"
+        description={text?.landing.services.description}
+        btnLabel={text?.landing.services.label}
         btnUrl="#"
         imageUrl={mockupIlustration}
       />
       <Section
-        description="Sou desenvolvedora front-end há mais de 5 anos. Ao longo da minha
-        carreira tive oportunidade de trabalhar em projetos de sites e
-        produtos digitais, e customização de layouts."
-        btnLabel="Veja o que eu posso fazer"
+        description={text?.landing.career.description}
+        btnLabel={text?.landing.career.label}
         btnUrl="#"
         imageUrl={notebookIlustration}
         reverse={true}
