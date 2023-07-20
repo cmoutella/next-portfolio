@@ -41,6 +41,7 @@ module.exports = {
           "light-opacity": "#3E475180",
           medium: "#2D343B",
           dark: "#403440",
+          darker: "#111111",
         },
         white: "#fff",
         black: "#000",
