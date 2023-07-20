@@ -7,9 +7,7 @@ const DefaultTemplate = ({ children }: { children: ReactNode }) => {
   return (
     <>
       <Navbar />
-      <div
-        className={`flex min-h-screen min-w-screen flex-col items-center justify-between ${redHat.className}`}
-      >
+      <div className={`min-h-screen min-w-screen ${redHat.className}`}>
         <main>{children}</main>
       </div>
       <Footer />
