@@ -1,16 +1,26 @@
+import { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+// Assets
 import selfIlustration from "@/assets/images/self_ilustration.svg";
+import { useUI } from "@/providers/UIProvider";
 
 const Navbar = () => {
-  if (typeof window === "undefined") {
-    return null;
-  }
+  const ref = useRef(null);
+  const { pageCurrentHeight, setBar } = useUI();
+  const translation = () => -80 + pageCurrentHeight;
 
   return (
-    <section className="bg-primary-medium min-w-screen py-[12px] sm:py-[12px]">
-      <div className="container">
+    <section
+      ref={ref}
+      className="fixed bg-primary-medium w-screen py-[12px] sm:py-[12px"
+      style={{
+        zIndex: 10,
+        transform: `translate(0, ${translation() > 0 ? 0 : translation()}px)`,
+      }}
+    >
+      <div className="container flex justify-between items-end">
         <div className="flex items-center justify-start">
           <div className="mr-[20px]">
             <Image
@@ -27,6 +37,21 @@ const Navbar = () => {
           >
             Carolina Moutella<span className="text-gray-dark">_</span>
           </Link>
+        </div>
+        <div className="flex items-center justify-start text-[14px] text-white uppercase">
+          <Link
+            href={`${window.location.origin}/services`}
+            className="mr-[20px]"
+          >
+            Serviços
+          </Link>
+          <Link
+            href={`${window.location.origin}/services`}
+            className="mr-[20px]"
+          >
+            Carreira
+          </Link>
+          <Link href={`${window.location.origin}/menthorship`}>Mentoria</Link>
         </div>
       </div>
     </section>
