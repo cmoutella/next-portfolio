@@ -4,6 +4,7 @@ import type { AppProps } from "next/app";
 
 // Providers
 import { TranslationProvider } from "@/providers/TranslationProvider";
+import { UIProvider } from "@/providers/UIProvider";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -18,7 +19,9 @@ export default function App({ Component, pageProps }: AppProps) {
       `}</style>
       <>
         <TranslationProvider>
-          <Component {...pageProps} />
+          <UIProvider>
+            <Component {...pageProps} />
+          </UIProvider>
         </TranslationProvider>
       </>
     </div>
