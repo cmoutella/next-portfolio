@@ -37,6 +37,7 @@ module.exports = {
           medium: "#2075A5",
         },
         gray: {
+          pinky: "#FAF4F7",
           light: "#3E4751",
           "light-opacity": "#3E475180",
           medium: "#2D343B",
