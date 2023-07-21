@@ -45,10 +45,7 @@ const Navbar = () => {
           >
             Serviços
           </Link>
-          <Link
-            href={`${window.location.origin}/services`}
-            className="mr-[20px]"
-          >
+          <Link href={`${window.location.origin}/career`} className="mr-[20px]">
             Carreira
           </Link>
           <Link href={`${window.location.origin}/menthorship`}>Mentoria</Link>

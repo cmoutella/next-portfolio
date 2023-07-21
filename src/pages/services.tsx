@@ -13,11 +13,11 @@ export default function Services() {
   return (
     <Template>
       <Hero
-        title="para o seu negócio"
-        subtitle="Soluções  e serviços para alavancar seu négocio digital"
+        title={content.services.title}
+        subtitle={content.services.subtitle}
         image={{
           src: heroImg,
-          alt: "pipou",
+          alt: content.services.heroAlt,
         }}
         classes={{
           mainColor: "bg-gray-darker",
