@@ -14,6 +14,10 @@ const texts = {
   career: {
     title: "Para o seu time",
     heroAlt: "Grupo de colegas reunidos trabalhando",
+    degree: {
+      title: "Formada em Ciência da Computação",
+      alt: "Chapéu de formatura",
+    },
     highlights: {
       title:
         "No mercado de técnologia desde 2017, veja algumas conquistas da minha carreira",

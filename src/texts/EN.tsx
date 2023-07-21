@@ -14,6 +14,7 @@ const texts = {
   career: {
     title: "For your team",
     heroAlt: "Coworkers working together",
+    degree: { title: "Bachelor in Computer Science", alt: "Graduation Cap" },
     highlights: {
       title:
         "In technology business since 2017, here are some highlights of my career",

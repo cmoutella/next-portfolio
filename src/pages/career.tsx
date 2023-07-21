@@ -1,13 +1,15 @@
 import { Default as Template } from "@/templates";
+import Image from "next/image";
 
 //Components
 import Hero from "@/components/Hero";
+import HighlightItem from "@/pageComponents/career/Hightlight";
+import Skills from "@/pageComponents/career/Skills";
 
 // Assets
 import { useTranslation } from "@/providers/TranslationProvider";
 import heroImg from "@/assets/images/career/hero.jpg";
-import HighlightItem from "@/pageComponents/career/Hightlight";
-import Skills from "@/pageComponents/career/Skills";
+import cap from "@/assets/images/career/cap.png";
 
 export default function Services() {
   const { text: content } = useTranslation();
@@ -47,6 +49,16 @@ export default function Services() {
                 </div>
               )
             )}
+          </div>
+        </div>
+      </section>
+      <section className="pt-[60px] pb-[40px]">
+        <div className="container">
+          <div className="flex justify-between items-center rounded-[20px] border-[2px] border-terciary-pale py-[30px] px-[40px] max-w-[630px] mx-auto">
+            <Image width={120} src={cap} alt={content.career.degree.alt} />
+            <span className="text-[22px] text-gray-light font-medium tracking-wide ml-[20px]">
+              {content.career.degree.title}
+            </span>
           </div>
         </div>
       </section>
