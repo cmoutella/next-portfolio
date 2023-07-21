@@ -1,9 +1,25 @@
 import { useTranslation } from "@/providers/TranslationProvider";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 type FilterItem = {
   name: string;
   type: string;
+};
+
+const SkillList = ({ list }: { list: FilterItem[] }) => {
+  return (
+    <div className="flex justify-center mb-[6px]">
+      {list.map((item: FilterItem, i: number) => (
+        <span
+          key={i}
+          className="mx-[4px] rounded-[4px] border-[1px] py-[8px] px-[12px] border-primary-medium"
+        >
+          {item.name}
+        </span>
+      ))}
+    </div>
+  );
 };
 
 const Skills = () => {
@@ -58,37 +74,46 @@ const Skills = () => {
           </div>
         ))}
       </div>
-      <div className="max-w-[1000px]">
-        <div className="flex justify-center mb-[6px]">
-          {skillsList1.map((item: FilterItem, i: number) => (
-            <span
-              key={i}
-              className="mx-[4px] rounded-[4px] border-[1px] py-[8px] px-[12px] border-primary-medium"
-            >
-              {item.name}
-            </span>
-          ))}
-        </div>
-        <div className="flex justify-center mb-[6px]">
-          {skillsList2.map((item: FilterItem, i: number) => (
-            <span
-              key={i}
-              className="mx-[4px] rounded-[4px] border-[1px] py-[8px] px-[12px] border-primary-medium"
-            >
-              {item.name}
-            </span>
-          ))}
-        </div>
-        <div className="flex justify-center">
-          {skillsList3.map((item: FilterItem, i: number) => (
-            <span
-              key={i}
-              className="mx-[4px] rounded-[4px] border-[1px] py-[8px] px-[12px] border-primary-medium"
-            >
-              {item.name}
-            </span>
-          ))}
-        </div>
+      <div className="max-w-[1000px] mx-auto">
+        <motion.div
+          animate={{
+            x: [-100, 100, -100],
+          }}
+          transition={{
+            duration: 8,
+            repeat: Infinity,
+            ease: "easeInOut",
+            repeatDelay: 0.3,
+          }}
+        >
+          <SkillList list={skillsList1} />
+        </motion.div>
+        <motion.div
+          animate={{
+            x: [80, -120, 80],
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+            ease: "easeInOut",
+            repeatDelay: 0.3,
+          }}
+        >
+          <SkillList list={skillsList2} />
+        </motion.div>
+        <motion.div
+          animate={{
+            x: [-80, 120, -80],
+          }}
+          transition={{
+            duration: 7,
+            repeat: Infinity,
+            ease: "easeInOut",
+            repeatDelay: 0.3,
+          }}
+        >
+          <SkillList list={skillsList3} />
+        </motion.div>
       </div>
     </div>
   );
