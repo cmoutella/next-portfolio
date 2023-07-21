@@ -1,7 +1,39 @@
 import { useState } from "react";
 import { motion, useAnimate } from "framer-motion";
+import Image from "next/image";
+import qc from "@/assets/images/career/qc.png";
+import runrun from "@/assets/images/career/runrun.png";
+import c6 from "@/assets/images/career/c6.png";
+import carrefour from "@/assets/images/career/carrefour.png";
 
-const HighlightItem = ({ text }: { text: string }) => {
+type Company = "qc" | "runrun" | "carrefour" | "c6";
+
+const COMPANY = {
+  qc: {
+    name: "QConcursos",
+    image: qc,
+  },
+  runrun: {
+    name: "Runrun.it",
+    image: runrun,
+  },
+  carrefour: {
+    name: "Carrefour",
+    image: carrefour,
+  },
+  c6: {
+    name: "C6 Bank",
+    image: c6,
+  },
+};
+
+const HighlightItem = ({
+  text,
+  company,
+}: {
+  text: string;
+  company: Company;
+}) => {
   const [scope, animate] = useAnimate();
   const [isVerse, setIsVerse] = useState(false);
 
@@ -22,7 +54,11 @@ const HighlightItem = ({ text }: { text: string }) => {
       {!isVerse && <span className="text-center">{text}</span>}
       {isVerse && (
         <span id="logo" style={{ transform: "rotateY(180deg)" }}>
-          logo
+          <Image
+            src={COMPANY[company].image}
+            alt={COMPANY[company].name}
+            width={80}
+          />
         </span>
       )}
     </motion.div>

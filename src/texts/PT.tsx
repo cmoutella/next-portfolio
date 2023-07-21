@@ -22,14 +22,45 @@ const texts = {
       title:
         "No mercado de técnologia desde 2017, veja algumas conquistas da minha carreira",
       list: [
-        "Desenvolvovi soluções para plataformas com mais de 300K usuários",
-        "Participei de soluções para uma plataforma de dados sincronizados em tempo real",
-        "Participei de projeto que obteve aumento de mais de 30% em retenção de usuários recém cadastrados",
-        "Desenvolvi pixel perfect landing pages para campanhas de vendas de sucesso",
-        "Participei de ações estratégicas para melhoria de SEO",
-        "Liderei grupos de 2 a 3 desenvolvedores para alcançarmos a solução",
-        "Participei ativamente na definição da solução a ser implementada",
-        "Organizei a estrutura de componentes utilizados em landing pages.",
+        {
+          description:
+            "Desenvolvovi soluções para plataformas com mais de 300K usuários",
+          company: "qc",
+        },
+        {
+          description:
+            "Participei de soluções para uma plataforma de dados sincronizados em tempo real",
+          company: "runrun",
+        },
+        {
+          description:
+            "Participei de projeto que obteve aumento de mais de 30% em retenção de usuários recém cadastrados",
+          company: "qc",
+        },
+        {
+          description:
+            "Desenvolvi pixel perfect landing pages para campanhas de vendas de sucesso",
+          company: "qc",
+        },
+        {
+          description: "Participei de ações estratégicas para melhoria de SEO",
+          company: "qc",
+        },
+        {
+          description:
+            "Liderei grupos de 2 a 3 desenvolvedores para alcançarmos a solução",
+          company: "carrefour",
+        },
+        {
+          description:
+            "Participei no planejamento da solução a ser implementada",
+          company: "c6",
+        },
+        {
+          description:
+            "Organizei a estrutura de componentes utilizados em landing pages.",
+          company: "qc",
+        },
       ],
     },
     skills: {

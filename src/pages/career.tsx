@@ -11,6 +11,11 @@ import { useTranslation } from "@/providers/TranslationProvider";
 import heroImg from "@/assets/images/career/hero.jpg";
 import cap from "@/assets/images/career/cap.png";
 
+type HighlightItem = {
+  description: string;
+  company: string;
+};
+
 export default function Services() {
   const { text: content } = useTranslation();
 
@@ -38,14 +43,17 @@ export default function Services() {
           </h4>
           <div className="flex flex-wrap justify-center max-w-[1000px] mx-auto">
             {content.career.highlights.list.map(
-              (item: string, index: number) => (
+              (item: HighlightItem, index: number) => (
                 <div
                   key={index}
                   className={`block ${marginBottom(index)} ${marginRight(
                     index
                   )}`}
                 >
-                  <HighlightItem text={item} />
+                  <HighlightItem
+                    text={item.description}
+                    company={item.company}
+                  />
                 </div>
               )
             )}
