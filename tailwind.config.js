@@ -22,6 +22,7 @@ module.exports = {
       },
       colors: {
         primary: {
+          pale: "#F0CDDF",
           lighter: "#E5C1D7",
           light: "#DD54A6",
           medium: "#A40765",
@@ -33,16 +34,21 @@ module.exports = {
           light: "#E3BF01",
         },
         terciary: {
+          pale: "#CDE5F0",
           light: "#2A9AD9",
           medium: "#2075A5",
         },
         gray: {
+          pale: "#F0F0F0",
           pinky: "#FAF4F7",
           light: "#3E4751",
           "light-opacity": "#3E475180",
           medium: "#2D343B",
           dark: "#403440",
           darker: "#111111",
+        },
+        green: {
+          pale: "#D0F0CD",
         },
         white: "#fff",
         black: "#000",

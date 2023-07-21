@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import { useTranslation } from "@/providers/TranslationProvider";
 import heroImg from "@/assets/images/career/hero.jpg";
 import HighlightItem from "@/pageComponents/career/Hightlight";
+import Skills from "@/pageComponents/career/Skills";
 
 export default function Services() {
   const { text: content } = useTranslation();
@@ -28,9 +29,9 @@ export default function Services() {
           backgroundStyles: "h-[400px]",
         }}
       />
-      <section className="py-[80px]">
+      <section className="pt-[100px] pb-[40px]">
         <div className="container">
-          <h4 className="text-center text-[24px] max-w-[500px] mx-auto mb-[40px]">
+          <h4 className="text-center text-gray-dark text-[24px] max-w-[500px] mx-auto mb-[40px]">
             {content.career.highlights.title}
           </h4>
           <div className="flex flex-wrap justify-center max-w-[1000px] mx-auto">
@@ -47,6 +48,14 @@ export default function Services() {
               )
             )}
           </div>
+        </div>
+      </section>
+      <section className="py-[80px]">
+        <div className="container">
+          <h4 className="text-center text-gray-dark text-[24px] max-w-[500px] mx-auto mb-[30px]">
+            {content.career.skills.title}
+          </h4>
+          <Skills />
         </div>
       </section>
     </Template>
