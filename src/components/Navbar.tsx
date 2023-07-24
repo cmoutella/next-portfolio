@@ -8,7 +8,7 @@ import { useUI } from "@/providers/UIProvider";
 
 const Navbar = () => {
   const ref = useRef(null);
-  const { pageCurrentHeight, setBar } = useUI();
+  const { pageCurrentHeight } = useUI();
   const translation = () => -80 + pageCurrentHeight;
 
   return (

@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
     <Template>
-      <div className="mb-[40px] py-[60px] text-gray-medium">
+      <div className="mb-[40px] pt-[120px] pb-[80px] text-gray-medium">
         <div className="container">
           <h1 className="font-changa-one text-[40px] text-center mb-[30px]">
             {text.landing.title}
@@ -17,8 +17,8 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-primary-dark text-white">
-        <div className="container pt-[60px] pb-[160px]">
-          <p className="text-[24px] text-center font-bold mx-auto mb-[30px]">
+        <div className="container pt-[100px] pb-[200px]">
+          <p className="text-[24px] text-center font-bold mx-auto mb-[60px]">
             {text.landing.intro.hi}
           </p>
           <p className="text-[20px] text-center max-w-[600px] mx-auto text-regular">
