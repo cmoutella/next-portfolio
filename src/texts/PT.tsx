@@ -110,6 +110,27 @@ const texts = {
     title: "Para o seu negócio",
     subtitle: "Soluções  e serviços para alavancar seu négocio digital",
     heroAlt: "Duas analistas discutindo negócios",
+    navigation: {
+      design: {
+        title: "Design",
+        description:
+          "<span style='font-weight: 600;'>Mais do que bonito</span>.</br> Um design eficiênte facilita o entendimento e leitura, ajuda aidentificar sua marca e a conectar seu cliente com o seu produto.",
+        image:
+          "Imagem de processo criativo,contém lâmpada, um lápis e uma engranagem",
+      },
+      development: {
+        title: "Desenvolvimento",
+        description:
+          "Implemento e incremento seu produto com alta performance e excelente experiência.",
+        image: "Imagem de navegador web com símbolo de engrenagem e código",
+      },
+      seo: {
+        title: "SEO",
+        description:
+          "<span style='font-weight: 600;'>Search Engine Optimization</span>.</br>Estratégia essêncial para um maior alcance de um público mais qualificado e relevante para o seu negócio.",
+        image: "Imagem navegador web com gráficos",
+      },
+    },
   },
 };
 

@@ -105,7 +105,28 @@ const texts = {
   services: {
     title: "For your business",
     subtitle: "Services and solutions to boost your digital business",
-    heroAlt: "Two analists discussing business",
+    heroAlt: "Two analysts discussing business",
+    navigation: {
+      design: {
+        title: "Design",
+        description:
+          "<span style='font-weight: 600;'>More than pretty</span>.</br> An efficient design facilitates reading and understanding, help identify your brand and connect your client with your product.",
+        image:
+          "Image of creative process, contains light bulb, a pencil and an engine piece",
+      },
+      development: {
+        title: "Development",
+        description:
+          "Implement and evolve your product with high performance e excellent experience.",
+        image: "Image of a web browser with engine and coding symbols",
+      },
+      seo: {
+        title: "SEO",
+        description:
+          "<span style='font-weight: 600;'>Search Engine Optimization</span>.</br>Must have strategy if you are looking for a better reach of qualified and relevant public for your business.",
+        image: "Image of a web browser showing graphs",
+      },
+    },
   },
 };
 

@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 // Assets
 import { useTranslation } from "@/providers/TranslationProvider";
 import heroImg from "@/assets/images/services/hero.jpg";
+import ContentNavigation from "@/pageComponents/services/ContentNavigation";
 
 export default function Services() {
   const { text: content } = useTranslation();
@@ -24,6 +25,7 @@ export default function Services() {
           backgroundStyles: "h-[400px]",
         }}
       />
+      <ContentNavigation />
     </Template>
   );
 }
