@@ -127,6 +127,38 @@ const texts = {
         image: "Image of a web browser showing graphs",
       },
     },
+    design: {
+      title: "Design",
+      content: {
+        define: {
+          title: "Define",
+          description:
+            "Define and understand client's objectives to guide design process.",
+        },
+        research: {
+          title: "Research",
+          description:
+            "Research market references and inspiring interface experiences .",
+        },
+        design: {
+          title: "Design",
+          description:
+            "Design strategic and intuitive interfaces for your business.",
+        },
+      },
+    },
+    development: {
+      title: "Development",
+      alt: "Image representing development process",
+      content: [
+        "Implement <span style='font-weight: 600;'>systems, interfaces e experiences;</span>",
+        "Design System development;",
+        "Integrating with other tools;",
+        "Inhance performance;",
+        "Increase confiability with testing;",
+        "Implement, evaluate e improve;",
+      ],
+    },
   },
 };
 

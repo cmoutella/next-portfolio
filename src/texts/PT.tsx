@@ -131,6 +131,38 @@ const texts = {
         image: "Imagem navegador web com gráficos",
       },
     },
+    design: {
+      title: "Design",
+      content: {
+        define: {
+          title: "Definir",
+          description:
+            "Entender e definir os objetivos do cliente para orientar o processo de design.",
+        },
+        research: {
+          title: "Pesquisar",
+          description:
+            "Pesquisar referências de mercado e experiência para inspirar as interfaces criadas.",
+        },
+        design: {
+          title: "Design",
+          description:
+            "Desenhar interfaces intuitivas e estratégicas para o seu negócio.",
+        },
+      },
+    },
+    development: {
+      title: "Desenvolvimento",
+      alt: "Imagem representando o ciclo de desenvolvimento",
+      content: [
+        "Implementação de <span style='font-weight: 600;'>sistemas, interfaces e experiências;</span>",
+        "Desenvolvimento de Design System;",
+        "Integração com outras ferramentas;",
+        "Melhoria de performance;",
+        "Aumento de confiabilidade com testes;",
+        "Implementar, avaliar e melhorar;",
+      ],
+    },
   },
 };
 

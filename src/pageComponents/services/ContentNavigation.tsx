@@ -29,7 +29,7 @@ const ContentNavigation = () => {
   const { text } = useTranslation();
 
   return (
-    <div className="py-[32px]">
+    <div className="pt-[60px] pb-[90px]">
       <div className="container flex justify-around">
         <div className="mx-[20px] w-[280px] flex flex-col items-center justify-start">
           <ItemHeader
