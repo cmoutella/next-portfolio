@@ -8,14 +8,14 @@ const PageSection = ({
   children: ReactNode;
 }) => {
   return (
-    <section className="bg-gray-pinky">
+    <article className="bg-gray-pinky">
       <div className="container relative pt-[70px] pb-[100px] max-w-[1100px]">
         <h4 className="absolute top-[-33px] left-[100px] text-[42px] font-bold">
           {title}
         </h4>
         {children}
       </div>
-    </section>
+    </article>
   );
 };
 
