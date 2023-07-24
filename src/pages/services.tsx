@@ -35,7 +35,7 @@ export default function Services() {
       />
       <ContentNavigation />
       <PageSection title={content.services.design.title}>
-        <div className="flex justify-around items-center">
+        <div className="flex justify-around items-center text-gray-darker">
           <DesignProcess
             name={content.services.design.content.define.title}
             icon={targetImg}
@@ -54,7 +54,7 @@ export default function Services() {
         </div>
       </PageSection>
       <PageSection title={content.services.development.title}>
-        <div className="flex justify-around items-center">
+        <div className="flex justify-around items-center text-gray-darker">
           <div>
             {content.services.development.content.map(
               (item: string, index: number) => (
@@ -77,7 +77,7 @@ export default function Services() {
         </div>
       </PageSection>
       <PageSection title={content.services.seo.title}>
-        <div className="flex justify-around items-center">
+        <div className="flex justify-around items-center text-gray-darker">
           <div className="max-w-[400px]">
             <p className="mb-[20px]">{content.services.seo.description}</p>
             {content.services.seo.content.map((item: string, index: number) => (
