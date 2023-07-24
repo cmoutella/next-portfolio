@@ -3,7 +3,9 @@ import Image from "next/image";
 
 //Components
 import Hero from "@/components/Hero";
-import HighlightItem from "@/pageComponents/career/Hightlight";
+import HighlightItem, {
+  type Company,
+} from "@/pageComponents/career/Hightlight";
 import Skills from "@/pageComponents/career/Skills";
 
 // Assets
@@ -13,7 +15,7 @@ import cap from "@/assets/images/career/cap.png";
 
 type HighlightItem = {
   description: string;
-  company: string;
+  company: Company;
 };
 
 export default function Services() {

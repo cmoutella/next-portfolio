@@ -6,7 +6,7 @@ import runrun from "@/assets/images/career/runrun.png";
 import c6 from "@/assets/images/career/c6.png";
 import carrefour from "@/assets/images/career/carrefour.png";
 
-type Company = "qc" | "runrun" | "carrefour" | "c6";
+export type Company = "qc" | "runrun" | "carrefour" | "c6";
 
 const COMPANY = {
   qc: {
