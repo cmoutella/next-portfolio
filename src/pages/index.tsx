@@ -2,9 +2,13 @@ import { Landing as Template } from "@/templates";
 
 // Assets
 import { useTranslation } from "@/providers/TranslationProvider";
+import Link from "next/link";
 
 export default function Home() {
   const { text } = useTranslation();
+
+  const toCareer = new URL("/career", window.location.origin).href;
+  const toServices = new URL("/services", window.location.origin).href;
 
   return (
     <Template>
@@ -29,13 +33,19 @@ export default function Home() {
       <div className="w-[900px] bg-white drop-shadow-md rounded-[20px] mt-[-80px] py-[60px] px-[100px] mx-auto text-[20px] text-center text-gray-medium mb-[80px]">
         <p className="mb-[80px] font-semibold">{text.landing.effect}</p>
         <p className="mb-[60px]">{text.landing.business.effect}</p>
-        <button className="bg-white border-[1px] border-primary-dark text-primary-dark px-[60px] py-[16px] rounded-[50px] mb-[80px]">
+        <Link
+          href={toServices}
+          className="bg-white border-[1px] border-primary-dark text-primary-dark px-[60px] py-[16px] rounded-[50px] mb-[80px]"
+        >
           {text.landing.business.label}
-        </button>
+        </Link>
         <p className="mb-[60px]">{text.landing.career.effect}</p>
-        <button className="bg-white border-[1px] border-primary-dark text-primary-dark px-[60px] py-[16px] rounded-[50px]">
+        <Link
+          href={toCareer}
+          className="bg-white border-[1px] border-primary-dark text-primary-dark px-[60px] py-[16px] rounded-[50px]"
+        >
           {text.landing.career.label}
-        </button>
+        </Link>
       </div>
     </Template>
   );
