@@ -14,6 +14,7 @@ import researchImg from "@/assets/images/services/research.png";
 import targetImg from "@/assets/images/services/target.png";
 import designImg from "@/assets/images/services/web-design.png";
 import processImg from "@/assets/images/services/incremental.png";
+import analysisImg from "@/assets/images/services/analysis.png";
 
 export default function Services() {
   const { text: content } = useTranslation();
@@ -59,7 +60,7 @@ export default function Services() {
               (item: string, index: number) => (
                 <p
                   key={index}
-                  className="mb-[8px] text-[16px]"
+                  className="mb-[10px] text-[16px]"
                   dangerouslySetInnerHTML={{
                     __html: item,
                   }}
@@ -70,6 +71,28 @@ export default function Services() {
           <Image
             src={processImg}
             alt={content.services.development.alt}
+            width={200}
+            className="opacity-60"
+          />
+        </div>
+      </PageSection>
+      <PageSection title={content.services.seo.title}>
+        <div className="flex justify-around items-center">
+          <div className="max-w-[400px]">
+            <p className="mb-[20px]">{content.services.seo.description}</p>
+            {content.services.seo.content.map((item: string, index: number) => (
+              <p
+                key={index}
+                className="mb-[8px] text-[16px]"
+                dangerouslySetInnerHTML={{
+                  __html: item,
+                }}
+              ></p>
+            ))}
+          </div>
+          <Image
+            src={analysisImg}
+            alt={content.services.seo.alt}
             width={200}
             className="opacity-60"
           />

@@ -9,8 +9,8 @@ const PageSection = ({
 }) => {
   return (
     <section className="bg-gray-pinky">
-      <div className="container relative pt-[70px] pb-[100px]">
-        <h4 className="absolute top-[-37px] left-[100px] text-[42px] font-bold">
+      <div className="container relative pt-[70px] pb-[100px] max-w-[1100px]">
+        <h4 className="absolute top-[-33px] left-[100px] text-[42px] font-bold">
           {title}
         </h4>
         {children}

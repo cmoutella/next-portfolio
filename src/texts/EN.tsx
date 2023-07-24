@@ -159,6 +159,18 @@ const texts = {
         "Implement, evaluate e improve;",
       ],
     },
+    seo: {
+      title: "SEO",
+      description:
+        "Analise your website and get a detailed and prioritized list of enhancement opportunities ",
+      alt: "Image of a web browser displaying graphs",
+      content: [
+        "Core Web Vitals;",
+        "Accessibility;",
+        "Responsable;",
+        "Performance;",
+      ],
+    },
   },
 };
 

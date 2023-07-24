@@ -163,6 +163,18 @@ const texts = {
         "Implementar, avaliar e melhorar;",
       ],
     },
+    seo: {
+      title: "SEO",
+      description:
+        "Analise o seu site e obtenha uma lista detalhada e priorizada com oportunidades de melhorias",
+      alt: "Imagem de navegador web mostrando gráficos",
+      content: [
+        "Core Web Vitals;</span>",
+        "Acessibilidade;",
+        "Responsividade;",
+        "Desempenho;",
+      ],
+    },
   },
 };
 
