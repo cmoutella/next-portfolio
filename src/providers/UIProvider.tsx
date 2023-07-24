@@ -5,23 +5,13 @@ import {
   useContext,
   useState,
 } from "react";
-import { MotionValue, useMotionValueEvent, useScroll } from "framer-motion";
-
-import { ElementRefType, PageCurrentHeight } from "@/types";
+import { useMotionValueEvent, useScroll } from "framer-motion";
 
 interface UIContext {
-  hero: ElementRefType;
-  setHero: Dispatch<HTMLDivElement>;
-  bar: ElementRefType;
-  setBar: Dispatch<HTMLDivElement>;
   pageCurrentHeight: number;
 }
 
 const DEFAULT_VALUES: UIContext = {
-  hero: null,
-  setHero: (_: HTMLDivElement) => null,
-  bar: null,
-  setBar: (_: HTMLDivElement) => null,
   pageCurrentHeight: 0,
 };
 
@@ -38,8 +28,6 @@ export const useUI = () => {
 };
 
 export const UIProvider = ({ children }: { children: ReactNode }) => {
-  const [hero, setHero] = useState<ElementRefType>(null);
-  const [bar, setBar] = useState<ElementRefType>(null);
   const [pageCurrentHeight, setPageCurrentHeight] = useState<number>(0);
   const { scrollY } = useScroll();
 
@@ -53,10 +41,6 @@ export const UIProvider = ({ children }: { children: ReactNode }) => {
   }
 
   const value = {
-    hero: hero,
-    setHero: setHero,
-    bar: bar,
-    setBar: setBar,
     pageCurrentHeight: pageCurrentHeight,
   };
 
