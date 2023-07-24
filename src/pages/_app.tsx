@@ -8,7 +8,7 @@ import { UIProvider } from "@/providers/UIProvider";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className="bg-white">
+    <div className="bg-[#fcfcfc]">
       <style jsx global>{`
         :root {
           --han-sans-font: ${hanSans.style.fontFamily};

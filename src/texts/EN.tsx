@@ -1,14 +1,29 @@
 const texts = {
   landing: {
-    services: {
+    title: "Web Designer, Developer e Menthor",
+    subtitle: "design to code: simply and shiny",
+    intro: {
+      hi: "Hi, I am Carolina.",
       description:
-        "Trabalho com a web desde 2017, nesses anos atuando como  tive contato com diversos aspectos de um produto digital. Da concepção de funcionalidades ao desenvolvimento, da análise de performance à ações voltadas para melhoria de SEO.",
-      label: "o que eu posso fazer pelo seu site",
+        "Since I started my developer career, over 7 years ago, I've worked remotly to companies and agencies, collaborating with many talented people to create and develop digital products for business and consumers.",
+    },
+    effect:
+      "I love participating in the making of quality products and excellent experience",
+    business: {
+      effect:
+        "As part of a team, or as a freelancer I create using most recent tools and techniques from the market, from design to SEO, from architecture to code design patters.",
+      label: "See what I can do for your product",
     },
     career: {
+      effect:
+        "The team environment makes the life cycle of a product more rich, with a diverse collaborative team we get happier people and more dynamic businesses.",
+      label: "See how I can contribute to your team",
+    },
+    menthor: {
+      title: "HandsOn Menthorship",
       description:
-        "Já atuei em diferentes contextos, desenvolvendo sites e produtos simples e performáticos para mais de 60K usuários diários. Contribuí para equipes e processos mais organizados, melhorando a eficiência e entrosamento do time.",
-      label: "o que eu posso fazer pelo seu time",
+        "Weekly group and individual live sessions and real challenges",
+      label: "MORE",
     },
   },
   career: {

@@ -1,14 +1,29 @@
 const texts = {
   landing: {
-    services: {
+    title: "Web Designer, Desenvolvedora e Mentora",
+    subtitle: "do design ao código: simples e brilhante",
+    intro: {
+      hi: "Olá, meu nome é Carolina.",
       description:
-        "Trabalho com a web desde 2017, nesses anos atuando como  tive contato com diversos aspectos de um produto digital. Da concepção de funcionalidades ao desenvolvimento, da análise de performance à ações voltadas para melhoria de SEO.",
-      label: "o que eu posso fazer pelo seu site",
+        "Desde que iniciei minha carreira como desenvolvedora, há mais de 6 anos, trabalhei remotamente para empresas e agências, colaborando com muita gente talentosa para criar e crescer produtos digitais para negócios e consumidores.",
+    },
+    effect:
+      "Eu adoro participar da criação de produtos de qualidade e desenhar experiências de excelência",
+    business: {
+      effect:
+        "Como parte de um time, ou trabalhando como freelancer, crio utilizando as técnicas mais recentes do mercado, do design ao SEO, da arquitetura aos pradrões de código.",
+      label: "Veja o que eu posso fazer pelo seu produto",
     },
     career: {
+      effect:
+        "O ambiente de equipe enriquece o processo de vida de um produto, com um time diverso e colaborativo temos pessoas mais felizes e negócios mais dinâmicos.",
+      label: "Veja como eu posso contribuir pro seu time",
+    },
+    menthor: {
+      title: "Mentoria HandsOn",
       description:
-        "Já atuei em diferentes contextos, desenvolvendo sites e produtos simples e performáticos para mais de 60K usuários diários. Contribuí para equipes e processos mais organizados, melhorando a eficiência e entrosamento do time.",
-      label: "o que eu posso fazer pelo seu time",
+        "Sessões semanais em grupo e individuais, ao vivo e com desafios reais",
+      label: "SAIBA MAIS",
     },
   },
   career: {
