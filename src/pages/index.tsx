@@ -35,11 +35,11 @@ export default function Home() {
         <p className="mb-[60px]">{text.landing.business.effect}</p>
         <Link
           href={toServices}
-          className="bg-white border-[1px] border-primary-dark text-primary-dark px-[60px] py-[16px] rounded-[50px] mb-[80px]"
+          className="bg-white border-[1px] border-primary-dark text-primary-dark px-[60px] py-[16px] rounded-[50px]"
         >
           {text.landing.business.label}
         </Link>
-        <p className="mb-[60px]">{text.landing.career.effect}</p>
+        <p className="my-[60px]">{text.landing.career.effect}</p>
         <Link
           href={toCareer}
           className="bg-white border-[1px] border-primary-dark text-primary-dark px-[60px] py-[16px] rounded-[50px]"
