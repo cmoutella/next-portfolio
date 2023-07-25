@@ -1,9 +1,9 @@
 import Image, { StaticImageData } from "next/image";
 
 // Assets
-import designImg from "@/assets/images/services/design.png";
-import developmentImg from "@/assets/images/services/development.png";
-import seoImg from "@/assets/images/services/seo.png";
+import designImg from "@/assets/images/business/design.png";
+import developmentImg from "@/assets/images/business/development.png";
+import seoImg from "@/assets/images/business/seo.png";
 import { useTranslation } from "@/providers/TranslationProvider";
 
 type ImageProps = {

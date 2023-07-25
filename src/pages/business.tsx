@@ -2,19 +2,19 @@ import { Default as Template } from "@/templates";
 
 //Components
 import Hero from "@/components/Hero";
-import ContentNavigation from "@/pageComponents/services/ContentNavigation";
-import PageSection from "@/pageComponents/services/Section";
+import ContentNavigation from "@/pageComponents/business/ContentNavigation";
+import PageSection from "@/pageComponents/business/Section";
 import Image from "next/image";
-import DesignProcess from "@/pageComponents/services/DesignProcess";
+import DesignProcess from "@/pageComponents/business/DesignProcess";
 
 // Assets
 import { useTranslation } from "@/providers/TranslationProvider";
-import heroImg from "@/assets/images/services/hero.jpg";
-import researchImg from "@/assets/images/services/research.png";
-import targetImg from "@/assets/images/services/target.png";
-import designImg from "@/assets/images/services/web-design.png";
-import processImg from "@/assets/images/services/incremental.png";
-import analysisImg from "@/assets/images/services/analysis.png";
+import heroImg from "@/assets/images/business/hero.jpg";
+import researchImg from "@/assets/images/business/research.png";
+import targetImg from "@/assets/images/business/target.png";
+import designImg from "@/assets/images/business/web-design.png";
+import processImg from "@/assets/images/business/incremental.png";
+import analysisImg from "@/assets/images/business/analysis.png";
 
 export default function Services() {
   const { text: content } = useTranslation();

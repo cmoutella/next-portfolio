@@ -8,7 +8,7 @@ export default function Home() {
   const { text } = useTranslation();
 
   const toCareer = new URL("/career", window.location.origin).href;
-  const toServices = new URL("/services", window.location.origin).href;
+  const toServices = new URL("/business", window.location.origin).href;
 
   return (
     <Template>
