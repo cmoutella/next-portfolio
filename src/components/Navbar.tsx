@@ -5,9 +5,16 @@ import Link from "next/link";
 // Assets
 import selfIlustration from "@/assets/images/self_ilustration.svg";
 import { useUI } from "@/providers/UIProvider";
+import { useTranslation } from "@/providers/TranslationProvider";
+
+type NavItemLink = {
+  name: string;
+  path: string;
+};
 
 const Navbar = () => {
   const ref = useRef(null);
+  const { text } = useTranslation();
   const { pageCurrentHeight } = useUI();
   const translation = () => -80 + pageCurrentHeight;
 
@@ -33,22 +40,20 @@ const Navbar = () => {
           <Link
             href={window.location.origin}
             className="text-white text-[18px] sm:text-[24px] font-red-hat /// max-w-[200px] sm:max-w-none mt-5 pointer"
-            onClick={() => {}}
           >
             Carolina Moutella<span className="text-gray-dark">_</span>
           </Link>
         </div>
-        <div className="flex items-center justify-start text-[14px] text-white uppercase">
-          <Link
-            href={`${window.location.origin}/services`}
-            className="mr-[20px]"
-          >
-            Serviços
-          </Link>
-          <Link href={`${window.location.origin}/career`} className="mr-[20px]">
-            Carreira
-          </Link>
-          <Link href={`${window.location.origin}/menthorship`}>Mentoria</Link>
+        <div className="flex items-center justify-start text-[14px] text-white font-medium uppercase">
+          {text.navigation.map((nav: NavItemLink, i: number) => (
+            <Link
+              key={i}
+              href={`${window.location.origin}${nav.path}`}
+              className="mr-[20px]"
+            >
+              {nav.name}
+            </Link>
+          ))}
         </div>
       </div>
     </section>

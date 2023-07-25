@@ -1,6 +1,11 @@
 const texts = {
+  navigation: [
+    { name: "Para seu negócio", path: "/business" },
+    { name: "Carreira", path: "/career" },
+    // {name: 'Mentoria', path: '/menthorship'},
+  ],
   landing: {
-    title: "Web Designer, Desenvolvedora e Mentora",
+    title: "Web Designer e Desenvolvedora",
     subtitle: "do design ao código: simples e brilhante",
     intro: {
       hi: "Olá, meu nome é Carolina.",
