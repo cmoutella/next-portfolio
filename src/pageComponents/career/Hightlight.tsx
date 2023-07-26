@@ -39,7 +39,7 @@ const HighlightItem = ({
 
   return (
     <motion.div
-      className="text-gray-dark text-[12px] /// bg-gray-pinky rounded-[8px] h-[200px] w-[200px] flex justify-center items-center p-[24px]"
+      className="text-gray-dark text-[11px] md:text-[12px] /// bg-gray-pinky rounded-[8px] h-[130px] w-[130px] md:h-[200px] md:w-[200px] flex justify-center items-center p-[12px] md:p-[24px]"
       onHoverStart={() => {
         animate(scope.current, { rotateY: [0, 180] }, { duration: 1 });
         animate("span", { opacity: 0 }, { duration: 1, delay: 1 });

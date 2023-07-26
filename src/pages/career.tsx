@@ -21,10 +21,6 @@ type HighlightItem = {
 export default function Services() {
   const { text: content } = useTranslation();
 
-  const marginBottom = (index: number) => (index > 3 ? "mb-0" : "mb-[20px]");
-  const marginRight = (index: number) =>
-    index === 3 || index === 7 ? "mr-0" : "mr-[16px]";
-
   return (
     <Template>
       <Hero
@@ -39,20 +35,15 @@ export default function Services() {
         }}
       />
 
-      <section className="pt-[100px] pb-[40px]">
+      <section className="pt-[60px] md:pt-[80px] pb-[40px]">
         <div className="container">
-          <h4 className="text-center text-gray-dark text-[24px] max-w-[500px] mx-auto mb-[40px]">
+          <h4 className="text-center text-gray-dark text-[18px] md:text-[20px] lg:text-[24px] md:max-w-[500px] lg:max-w-[570px] mx-auto mb-[40px]">
             {content.career.highlights.title}
           </h4>
           <div className="flex flex-wrap justify-center max-w-[1000px] mx-auto">
             {content.career.highlights.list.map(
               (item: HighlightItem, index: number) => (
-                <div
-                  key={index}
-                  className={`block ${marginBottom(index)} ${marginRight(
-                    index
-                  )}`}
-                >
+                <div key={index} className={`block mx-[8px] my-[10px]`}>
                   <HighlightItem
                     text={item.description}
                     company={item.company}
