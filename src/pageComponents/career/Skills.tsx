@@ -13,7 +13,7 @@ const SkillList = ({ list }: { list: FilterItem[] }) => {
       {list.map((item: FilterItem, i: number) => (
         <span
           key={i}
-          className="mx-[4px] rounded-[4px] border-[1px] py-[8px] px-[12px] border-primary-medium"
+          className="text-[12px] md:text-[16px] whitespace-nowrap mx-[4px] rounded-[4px] border-[1px] py-[8px] px-[12px] border-primary-medium"
         >
           {item.name}
         </span>
@@ -61,11 +61,11 @@ const Skills = () => {
 
   return (
     <div>
-      <div className="flex justify-center items-center mb-[24px]">
+      <div className="grid grid-rows-2 grid-cols-2 gap-[6px] md:flex flex-wrap justify-center items-center mb-[24px] px-[8px]">
         {content.filters.map((filter: FilterItem, i: number) => (
           <div
             key={i}
-            className={`text-[12px] font-semibold text-gray-medium tracking-wide uppercase rounded-[20px] py-[1px] px-[8px] mx-[8px] ${filterColors[i]}`}
+            className={`text-[12px] text-center font-semibold text-gray-medium tracking-wide uppercase rounded-[20px] py-[1px] px-[8px] mx-[4px] ${filterColors[i]}`}
             onClick={() => {
               onFilter(filter.type);
             }}
@@ -74,13 +74,20 @@ const Skills = () => {
           </div>
         ))}
       </div>
-      <div className="max-w-[1000px] mx-auto">
+
+      <div
+        className="mx-auto overflow-hidden lg:overflow-visible lg:max-w-[1000px]"
+        style={{
+          boxShadow:
+            "inset 15px 0 12px -2px #FFF, inset -15px 0 12px -2px #FFF",
+        }}
+      >
         <motion.div
           animate={{
-            x: [-100, 100, -100],
+            x: [-170, 180, -170],
           }}
           transition={{
-            duration: 8,
+            duration: 9,
             repeat: Infinity,
             ease: "easeInOut",
             repeatDelay: 0.3,
@@ -90,10 +97,10 @@ const Skills = () => {
         </motion.div>
         <motion.div
           animate={{
-            x: [80, -120, 80],
+            x: [200, -200, 200],
           }}
           transition={{
-            duration: 10,
+            duration: 12,
             repeat: Infinity,
             ease: "easeInOut",
             repeatDelay: 0.3,
@@ -103,10 +110,10 @@ const Skills = () => {
         </motion.div>
         <motion.div
           animate={{
-            x: [-80, 120, -80],
+            x: [-200, 200, -200],
           }}
           transition={{
-            duration: 7,
+            duration: 8,
             repeat: Infinity,
             ease: "easeInOut",
             repeatDelay: 0.3,
