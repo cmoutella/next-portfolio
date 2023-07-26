@@ -26,20 +26,18 @@ const TopBar = () => {
         transform: `translate(0, ${translation() > 0 ? 0 : translation()}px)`,
       }}
     >
-      <div className="container max-w-[1200px]">
+      <div className="container max-w-[95%] lg:max-w-[1200px]">
         <div className="relative">
           <Link
             href={bWindow?.location.origin ?? ""}
-            className="text-white text-[40px] sm:text-[48px] font-red-hat /// max-w-[200px] sm:max-w-none mt-5 pointer"
-            onClick={() => {}}
+            className="text-white text-[28px] md:text-[48px] text-center md:text-start font-red-hat /// mt-5 pointer"
           >
             Carolina Moutella<span className="text-gray-dark">_</span>
           </Link>
-          <div className="absolute right-[0px] top-[-20px]">
+          <div className="absolute right-[-10px] md:right-[0px] top-[-10px] md:top-[-20px] w-[50px] md:w-[160px] lg:w-[200px]">
             <Image
               src={selfIlustration}
               alt="Ilustration of Carolina's face (in 2019)"
-              width={200}
             />
           </div>
         </div>
