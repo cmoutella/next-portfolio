@@ -31,7 +31,7 @@ export default function Services() {
         }}
         classes={{
           mainColor: "bg-gray-darker",
-          backgroundStyles: "h-[400px]",
+          backgroundStyles: "h-[220px] md:h-[400px]",
         }}
       />
 
