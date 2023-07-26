@@ -36,7 +36,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container max-w-[90%] lg:max-w-[900px] bg-white drop-shadow-md rounded-[20px] mt-[-80px] py-[40px] md:py-[60px] px-[24px] md:px-[100px] mx-auto text-center text-gray-medium mb-[80px]">
+      <div className="container max-w-[90%] lg:max-w-[900px] bg-white drop-shadow-md rounded-[20px] mt-[-100px] lg:mt-[-80px] py-[40px] md:py-[60px] px-[24px] md:px-[100px] mx-auto text-center text-gray-medium mb-[80px]">
         <p className="mb-[40px] md:mb-[80px] font-semibold text-[18px] md:text-[20px]">
           {text.landing.effect}
         </p>
