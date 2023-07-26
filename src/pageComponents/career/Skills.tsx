@@ -61,7 +61,7 @@ const Skills = () => {
 
   return (
     <div>
-      <div className="grid grid-rows-2 grid-cols-2 gap-[6px] md:flex flex-wrap justify-center items-center mb-[24px]">
+      <div className="grid grid-rows-2 grid-cols-2 gap-[6px] md:flex flex-wrap justify-center items-center mb-[24px] px-[8px]">
         {content.filters.map((filter: FilterItem, i: number) => (
           <div
             key={i}
