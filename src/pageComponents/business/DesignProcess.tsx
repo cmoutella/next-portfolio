@@ -10,8 +10,8 @@ const DesignProcess = ({
   description: string;
 }) => {
   return (
-    <div className="w-[230px] flex flex-col justify-center">
-      <div className="rounded-full flex flex-col justify-center items-center bg-white w-[200px] h-[200px] drop-shadow-md mb-[30px]">
+    <div className="w-[230px] flex flex-col justify-center items-center mb-[32px] md:mb-0">
+      <div className="flex flex-col justify-center items-center w-[200px] h-[200px] /// mb-[30px] /// bg-white drop-shadow-md rounded-full ">
         <Image
           src={icon}
           alt="ícone ilustrativo"

@@ -122,7 +122,7 @@ const texts = {
       ],
     },
   },
-  services: {
+  business: {
     title: "For your business",
     subtitle: "Services and solutions to boost your digital business",
     heroAlt: "Two analysts discussing business",

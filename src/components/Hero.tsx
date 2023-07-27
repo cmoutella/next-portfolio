@@ -20,6 +20,7 @@ type HeroProps = {
 const Hero = ({ title, subtitle, classes, image }: HeroProps) => {
   const titleParts = title.split(" ");
   const effectWord = titleParts[titleParts.length - 1];
+  const titleImpact = title.split(effectWord)[0];
 
   return (
     <section className={`w-full ${classes.mainColor}`}>
@@ -38,19 +39,24 @@ const Hero = ({ title, subtitle, classes, image }: HeroProps) => {
           className={`flex flex-col items-center ${subtitle && "pt-[10px]"}`}
         >
           <h1
-            className="uppercase text-center text-white text-[32px] md:text-[60px] font-paytone tracking-wider /// relative"
+            className="uppercase text-center text-white text-[38px] md:text-[60px] font-paytone tracking-wider /// relative"
             style={{ zIndex: 2 }}
           >
-            {title}
+            <span className="hidden md:inline">{title}</span>
+            <span className="md:hidden">
+              {titleImpact} <br /> {effectWord}
+            </span>
+
             <span
-              className="text-primary-medium absolute right-0 bottom-0 translate-y-[-5px] md:translate-y-[-8px] translate-x-[-5px] md:translate-x-[-8px]"
+              className="text-primary-medium absolute right-[50%] md:right-0 bottom-0 translate-y-[-5px] translate-x-[46%] md:translate-y-[-8px] md:translate-x-[-8px]"
               style={{ zIndex: -1 }}
             >
               {effectWord}
             </span>
           </h1>
+
           {subtitle && (
-            <h3 className="text-white text-[14px] md:text-[18px] tracking-wider block mt-[20px]">
+            <h3 className="text-white text-center text-[14px] md:text-[18px] tracking-wider block mt-[20px]">
               {subtitle}
             </h3>
           )}

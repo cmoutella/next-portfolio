@@ -22,45 +22,48 @@ export default function Services() {
   return (
     <Template>
       <Hero
-        title={content.services.title}
-        subtitle={content.services.subtitle}
+        title={content.business.title}
+        subtitle={content.business.subtitle}
         image={{
           src: heroImg,
-          alt: content.services.heroAlt,
+          alt: content.business.heroAlt,
         }}
         classes={{
           mainColor: "bg-gray-darker",
           backgroundStyles: "h-[400px]",
         }}
       />
+
       <ContentNavigation />
-      <PageSection title={content.services.design.title}>
-        <div className="flex justify-around items-center text-gray-darker">
+
+      <PageSection title={content.business.design.title}>
+        <div className="flex flex-col md:flex-row justify-center md:justify-around items-center text-gray-darker">
           <DesignProcess
-            name={content.services.design.content.define.title}
+            name={content.business.design.content.define.title}
             icon={targetImg}
-            description={content.services.design.content.define.description}
+            description={content.business.design.content.define.description}
           />
           <DesignProcess
-            name={content.services.design.content.research.title}
+            name={content.business.design.content.research.title}
             icon={researchImg}
-            description={content.services.design.content.research.description}
+            description={content.business.design.content.research.description}
           />
           <DesignProcess
-            name={content.services.design.content.design.title}
+            name={content.business.design.content.design.title}
             icon={designImg}
-            description={content.services.design.content.design.description}
+            description={content.business.design.content.design.description}
           />
         </div>
       </PageSection>
-      <PageSection title={content.services.development.title}>
-        <div className="flex justify-around items-center text-gray-darker">
-          <div>
-            {content.services.development.content.map(
+
+      <PageSection title={content.business.development.title}>
+        <div className="flex flex-col-reverse md:flex-row justify-around items-center text-gray-darker">
+          <div className="max-w-[250px] md:max-w-[400px]">
+            {content.business.development.content.map(
               (item: string, index: number) => (
                 <p
                   key={index}
-                  className="mb-[10px] text-[16px]"
+                  className="mb-[10px] text-[14px] md:text-[16px]"
                   dangerouslySetInnerHTML={{
                     __html: item,
                   }}
@@ -68,34 +71,40 @@ export default function Services() {
               )
             )}
           </div>
-          <Image
-            src={processImg}
-            alt={content.services.development.alt}
-            width={200}
-            className="opacity-60"
-          />
+          <div className="w-[150px] md:w-[200px] mb-[24px] md:mb-0">
+            <Image
+              src={processImg}
+              alt={content.business.development.alt}
+              className="opacity-60"
+            />
+          </div>
         </div>
       </PageSection>
-      <PageSection title={content.services.seo.title}>
-        <div className="flex justify-around items-center text-gray-darker">
-          <div className="max-w-[400px]">
-            <p className="mb-[20px]">{content.services.seo.description}</p>
-            {content.services.seo.content.map((item: string, index: number) => (
+
+      <PageSection title={content.business.seo.title}>
+        <div className="flex flex-col-reverse md:flex-row justify-around items-center text-gray-darker">
+          <div className="max-w-[250px] md:max-w-[400px]">
+            <p className="mb-[20px] text-[14px] md:text-[16px]">
+              {content.business.seo.description}
+            </p>
+            {content.business.seo.content.map((item: string, index: number) => (
               <p
                 key={index}
-                className="mb-[8px] text-[16px]"
+                className="mb-[8px] text-[14px] md:text-[16px] font-medium"
                 dangerouslySetInnerHTML={{
                   __html: item,
                 }}
               ></p>
             ))}
           </div>
-          <Image
-            src={analysisImg}
-            alt={content.services.seo.alt}
-            width={200}
-            className="opacity-60"
-          />
+          <div className="w-[150px] md:w-[200px] mb-[24px] md:mb-0">
+            <Image
+              src={analysisImg}
+              alt={content.business.seo.alt}
+              width={200}
+              className="opacity-60"
+            />
+          </div>
         </div>
       </PageSection>
     </Template>
