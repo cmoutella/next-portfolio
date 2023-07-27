@@ -22,11 +22,11 @@ export default function Services() {
   return (
     <Template>
       <Hero
-        title={content.services.title}
-        subtitle={content.services.subtitle}
+        title={content.business.title}
+        subtitle={content.business.subtitle}
         image={{
           src: heroImg,
-          alt: content.services.heroAlt,
+          alt: content.business.heroAlt,
         }}
         classes={{
           mainColor: "bg-gray-darker",
@@ -36,30 +36,30 @@ export default function Services() {
 
       <ContentNavigation />
 
-      <PageSection title={content.services.design.title}>
+      <PageSection title={content.business.design.title}>
         <div className="flex flex-col md:flex-row justify-center md:justify-around items-center text-gray-darker">
           <DesignProcess
-            name={content.services.design.content.define.title}
+            name={content.business.design.content.define.title}
             icon={targetImg}
-            description={content.services.design.content.define.description}
+            description={content.business.design.content.define.description}
           />
           <DesignProcess
-            name={content.services.design.content.research.title}
+            name={content.business.design.content.research.title}
             icon={researchImg}
-            description={content.services.design.content.research.description}
+            description={content.business.design.content.research.description}
           />
           <DesignProcess
-            name={content.services.design.content.design.title}
+            name={content.business.design.content.design.title}
             icon={designImg}
-            description={content.services.design.content.design.description}
+            description={content.business.design.content.design.description}
           />
         </div>
       </PageSection>
 
-      <PageSection title={content.services.development.title}>
+      <PageSection title={content.business.development.title}>
         <div className="flex flex-col-reverse md:flex-row justify-around items-center text-gray-darker">
           <div className="max-w-[250px] md:max-w-[400px]">
-            {content.services.development.content.map(
+            {content.business.development.content.map(
               (item: string, index: number) => (
                 <p
                   key={index}
@@ -74,20 +74,20 @@ export default function Services() {
           <div className="w-[150px] md:w-[200px] mb-[24px] md:mb-0">
             <Image
               src={processImg}
-              alt={content.services.development.alt}
+              alt={content.business.development.alt}
               className="opacity-60"
             />
           </div>
         </div>
       </PageSection>
 
-      <PageSection title={content.services.seo.title}>
+      <PageSection title={content.business.seo.title}>
         <div className="flex flex-col-reverse md:flex-row justify-around items-center text-gray-darker">
           <div className="max-w-[250px] md:max-w-[400px]">
             <p className="mb-[20px] text-[14px] md:text-[16px]">
-              {content.services.seo.description}
+              {content.business.seo.description}
             </p>
-            {content.services.seo.content.map((item: string, index: number) => (
+            {content.business.seo.content.map((item: string, index: number) => (
               <p
                 key={index}
                 className="mb-[8px] text-[14px] md:text-[16px] font-medium"
@@ -100,7 +100,7 @@ export default function Services() {
           <div className="w-[150px] md:w-[200px] mb-[24px] md:mb-0">
             <Image
               src={analysisImg}
-              alt={content.services.seo.alt}
+              alt={content.business.seo.alt}
               width={200}
               className="opacity-60"
             />

@@ -33,43 +33,43 @@ const ContentNavigation = () => {
       <div className="container flex flex-col md:flex-row justify-around items-center">
         <div className="md:mx-[20px] w-[280px] flex flex-col items-center justify-start mb-[32px] md:mb-0">
           <ItemHeader
-            title={text.services.navigation.design.title}
+            title={text.business.navigation.design.title}
             image={{
               src: designImg,
-              alt: text.services.navigation.design.alt,
+              alt: text.business.navigation.design.alt,
             }}
           />
           <p
             className="text-center text-[14px] mt-[24px]"
             dangerouslySetInnerHTML={{
-              __html: text.services.navigation.design.description,
+              __html: text.business.navigation.design.description,
             }}
           ></p>
         </div>
         <div className="md:mx-[20px] w-[280px] flex flex-col items-center justify-start mb-[32px] md:mb-0">
           <ItemHeader
-            title={text.services.navigation.development.title}
+            title={text.business.navigation.development.title}
             image={{
               src: developmentImg,
-              alt: text.services.navigation.development.alt,
+              alt: text.business.navigation.development.alt,
             }}
           />
           <p
             className="text-center text-[14px] mt-[24px]"
             dangerouslySetInnerHTML={{
-              __html: text.services.navigation.development.description,
+              __html: text.business.navigation.development.description,
             }}
           ></p>
         </div>
         <div className="md:mx-[20px] w-[280px] flex flex-col items-center justify-start">
           <ItemHeader
-            title={text.services.navigation.seo.title}
-            image={{ src: seoImg, alt: text.services.navigation.seo.alt }}
+            title={text.business.navigation.seo.title}
+            image={{ src: seoImg, alt: text.business.navigation.seo.alt }}
           />
           <p
             className="text-center text-[14px] mt-[24px]"
             dangerouslySetInnerHTML={{
-              __html: text.services.navigation.seo.description,
+              __html: text.business.navigation.seo.description,
             }}
           ></p>
         </div>
