@@ -30,8 +30,8 @@ const ContentNavigation = () => {
 
   return (
     <div className="pt-[60px] pb-[120px]">
-      <div className="container flex justify-around">
-        <div className="mx-[20px] w-[280px] flex flex-col items-center justify-start">
+      <div className="container flex flex-col md:flex-row justify-around items-center">
+        <div className="md:mx-[20px] w-[280px] flex flex-col items-center justify-start mb-[32px] md:mb-0">
           <ItemHeader
             title={text.services.navigation.design.title}
             image={{
@@ -46,7 +46,7 @@ const ContentNavigation = () => {
             }}
           ></p>
         </div>
-        <div className="mx-[20px] w-[280px] flex flex-col items-center justify-start">
+        <div className="md:mx-[20px] w-[280px] flex flex-col items-center justify-start mb-[32px] md:mb-0">
           <ItemHeader
             title={text.services.navigation.development.title}
             image={{
@@ -61,7 +61,7 @@ const ContentNavigation = () => {
             }}
           ></p>
         </div>
-        <div className="mx-[20px] w-[280px] flex flex-col items-center justify-start">
+        <div className="md:mx-[20px] w-[280px] flex flex-col items-center justify-start">
           <ItemHeader
             title={text.services.navigation.seo.title}
             image={{ src: seoImg, alt: text.services.navigation.seo.alt }}
