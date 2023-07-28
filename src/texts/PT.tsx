@@ -128,7 +128,7 @@ const texts = {
       ],
     },
   },
-  services: {
+  business: {
     title: "Para o seu negócio",
     subtitle: "Soluções  e serviços para alavancar seu négocio digital",
     heroAlt: "Duas analistas discutindo negócios",
