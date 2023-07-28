@@ -13,16 +13,16 @@ const texts = {
         "Since I started my developer career, over 7 years ago, I've worked remotly to companies and agencies, collaborating with many talented people to create and develop digital products for business and consumers.",
     },
     effect:
-      "I love participating in the making of quality products and excellent experience",
+      "I am passionate about seeing projects and products go from the idea to beautiful designs, and giving a special touch to each experience.",
     business: {
       effect:
-        "As part of a team, or as a freelancer I create using most recent tools and techniques from the market, from design to SEO, from architecture to code design patters.",
-      label: "See what I can do for your product",
+        "Unlock the potential of your projects with my expertise! Whether as part of a dynamic team or as a dedicated freelancer, I craft exceptional solutions using cutting-edge techniques and industry-leading tools. From captivating designs to SEO optimization, and from robust architecture to impeccable code standards, I deliver excellence at every stage.",
+      label: "Find out what I can do for your product",
     },
     career: {
       effect:
-        "The team environment makes the life cycle of a product more rich, with a diverse collaborative team we get happier people and more dynamic businesses.",
-      label: "See how I can contribute to your team",
+        "With experience and expertise, I am ready to boost collaboration, motivation, and your team's success.",
+      label: "Find out how I can contribute to your team",
     },
     menthor: {
       title: "HandsOn Menthorship",
@@ -45,42 +45,43 @@ const texts = {
         },
         {
           description:
-            "Participated in solutions for a real time task management platform",
-          company: "runrun",
-        },
-        {
-          description:
-            "Participated in a project that achieved an increase of 30% retention of recently subscribed users",
-          company: "qc",
-        },
-        {
-          description:
             "Developed pixel perfect landing pages for successful sales campaigns",
           company: "qc",
         },
         {
           description:
-            "Took part on strategic actions to improve platform's SEO",
+            "Participated in solutions for a real time task management platform",
+          company: "runrun",
+        },
+        {
+          description:
+            "Participated in a project that successfully achieved a 30% increase in retention among recently subscribed users.",
           company: "qc",
         },
         {
           description:
-            "Leaded groups of 2 to 3 developers in the making of a solution",
-          company: "carrefour",
+            "I developed a complex project for managing PIX keys with integration with the Central Bank (BACEN)",
+          company: "qc",
         },
         {
           description:
-            "Actively participated in refining and planing tasks for my team",
+            "Participated in strategic actions aimed at improving the platform's SEO.",
+          company: "qc",
+        },
+        {
+          description:
+            "participated in the development and maintenance of the Design System.",
           company: "c6",
         },
         {
-          description: "Organized codebase for landing pages components",
-          company: "qc",
+          description:
+            "I led a team of 2 to 3 developers in the development of e-commerce solutions",
+          company: "carrefour",
         },
       ],
     },
     skills: {
-      title: "Características profissionais",
+      title: "Skills",
       filters: [
         { name: "soft skills", type: "soft" },
         { name: "technologies", type: "tech" },
@@ -112,6 +113,7 @@ const texts = {
           { name: "Tailwind", type: "tech" },
           { name: "CI/CD", type: "method" },
           { name: "Next.js", type: "tech" },
+          { name: "Upbeat", type: "soft" },
           { name: "Jest", type: "tech" },
           { name: "Design Petterns", type: "method" },
           { name: "DRY", type: "method" },
@@ -122,7 +124,7 @@ const texts = {
       ],
     },
   },
-  business: {
+  services: {
     title: "For your business",
     subtitle: "Services and solutions to boost your digital business",
     heroAlt: "Two analysts discussing business",

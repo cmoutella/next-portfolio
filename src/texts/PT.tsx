@@ -13,15 +13,15 @@ const texts = {
         "Desde que iniciei minha carreira como desenvolvedora, há mais de 6 anos, trabalhei remotamente para empresas e agências, colaborando com muita gente talentosa para criar e crescer produtos digitais para negócios e consumidores.",
     },
     effect:
-      "Eu adoro participar da criação de produtos de qualidade e desenhar experiências de excelência",
+      "Sou apaixonada por ver projetos e produtos ganharem forma, transformando-se em belos designs, e proporcionar um toque especial a cada experiência.",
     business: {
       effect:
-        "Como parte de um time, ou trabalhando como freelancer, crio utilizando as técnicas mais recentes do mercado, do design ao SEO, da arquitetura aos pradrões de código.",
+        "Desbloqueie o potencial dos seus projetos com a minha expertise! Seja como parte de uma equipe dinâmica ou como freelancer dedicado, eu crio soluções excepcionais utilizando técnicas avançadas e ferramentas líderes de mercado. Desde designs cativantes até otimização de SEO, e desde arquitetura robusta até padrões de código impecáveis, eu entrego excelência em cada etapa",
       label: "Veja o que eu posso fazer pelo seu produto",
     },
     career: {
       effect:
-        "O ambiente de equipe enriquece o processo de vida de um produto, com um time diverso e colaborativo temos pessoas mais felizes e negócios mais dinâmicos.",
+        "Com experiência e expertise, estou preparado para impulsionar a colaboração, a motivação e o sucesso do seu time.",
       label: "Veja como eu posso contribuir pro seu time",
     },
     menthor: {
@@ -39,6 +39,7 @@ const texts = {
       alt: "Chapéu de formatura",
     },
     highlights: {
+      //DESIGN SYSTEM
       title:
         "No mercado de técnologia desde 2017, veja algumas conquistas da minha carreira",
       list: [
@@ -49,7 +50,12 @@ const texts = {
         },
         {
           description:
-            "Participei de soluções para uma plataforma de dados sincronizados em tempo real",
+            "Desenvolvi pixel perfect landing pages para campanhas de vendas de sucesso",
+          company: "qc",
+        },
+        {
+          description:
+            "Desenvolvi soluções para uma plataforma de dados sincronizados entre usuários em tempo real",
           company: "runrun",
         },
         {
@@ -59,8 +65,8 @@ const texts = {
         },
         {
           description:
-            "Desenvolvi pixel perfect landing pages para campanhas de vendas de sucesso",
-          company: "qc",
+            "Desenvolvi um projeto complexo de gerenciamento de chaves pix com integração com o BACEN",
+          company: "c6",
         },
         {
           description: "Participei de ações estratégicas para melhoria de SEO",
@@ -68,18 +74,13 @@ const texts = {
         },
         {
           description:
-            "Liderei grupos de 2 a 3 desenvolvedores para alcançarmos a solução",
-          company: "carrefour",
-        },
-        {
-          description:
-            "Participei no planejamento da solução a ser implementada",
+            "Participei do desenvolvimento e manutenção do Design System",
           company: "c6",
         },
         {
           description:
-            "Organizei a estrutura de componentes utilizados em landing pages.",
-          company: "qc",
+            "Liderei time de 2 a 3 desenvolvedores no desenvolvimento de soluções para ecommerce",
+          company: "carrefour",
         },
       ],
     },
@@ -116,6 +117,7 @@ const texts = {
           { name: "Tailwind", type: "tech" },
           { name: "CI/CD", type: "method" },
           { name: "Next.js", type: "tech" },
+          { name: "Bom humor", type: "soft" },
           { name: "Jest", type: "tech" },
           { name: "Design Petterns", type: "method" },
           { name: "DRY", type: "method" },
@@ -126,7 +128,7 @@ const texts = {
       ],
     },
   },
-  business: {
+  services: {
     title: "Para o seu negócio",
     subtitle: "Soluções  e serviços para alavancar seu négocio digital",
     heroAlt: "Duas analistas discutindo negócios",
